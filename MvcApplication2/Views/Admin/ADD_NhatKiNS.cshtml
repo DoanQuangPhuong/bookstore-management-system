@@ -1,0 +1,101 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Nhập Sách</title>
+    <!-- Bootstrap CSS -->
+    <link href="~/css/bootstrap_online.css" rel="stylesheet" />
+    <style>
+        .container_top {
+            margin-top: 50px;
+        }
+
+        .form-container_design {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .h2_title {
+            color: #007bff;
+        }
+
+        .nhap_sach {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+            .nhap_sach:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+
+        .btn-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .message {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container container_top">
+        <div class="form-container form-container_design">
+            <h2 class="text-center mb-4 h2_title">Nhập Sách</h2>
+            <form action="/Admin/ADD_NhatKiNS" method="post">
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="stt">STT</label>
+                        <input type="text" class="form-control" id="stt" name="stt" placeholder="STT">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="maSach">Mã Sách</label>
+                        <input type="text" class="form-control" id="maSach" name="maSach" placeholder="Mã Sách">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="soLuong">Số Lượng</label>
+                        <input type="text" class="form-control" id="soLuong" name="soLuong" placeholder="Số Lượng">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="ngayNhap">Ngày Nhập</label>
+                        <input type="date" class="form-control" id="ngayNhap" name="ngayNhap">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="maNhanVien">Mã Nhân Viên Nhập</label>
+                        <input type="text" class="form-control" id="maNhanVien" name="maNhanVien" placeholder="Mã Nhân Viên Nhập">
+                    </div>
+                </div>
+                <div class="btn-center">
+                    <button type="submit" class="btn btn-primary nhap_sach" onclick="showSuccessMessage()">Nhập Sách</button>
+                </div>
+            </form>
+            <div class="message" id="successMessage" style="display: none;">Thêm Thành Công</div>
+        </div>
+    </div>
+
+
+    <script>
+        function showSuccessMessage() {
+            document.querySelector("form").addEventListener("submit", function (event) {
+                alert("Nhập Thành Công");
+            });
+        }
+    </script>
+
+</body>
+</html>
+

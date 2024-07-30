@@ -1,0 +1,289 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Nhà Sách</title>
+    <!-- Đảm bảo bạn đã tích hợp Bootstrap -->
+    <link href="~/css/bootstrap_online.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* CSS tùy chỉnh */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+        .search-add-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .small-button {
+            padding: 4px 10px; /* Điều chỉnh kích thước padding theo mong muốn */
+            font-size: 14px; /* Điều chỉnh kích thước font theo mong muốn */
+        }
+
+        .Them {
+            margin-left: 89px;
+        }
+
+        .form_search {
+            margin-top: 20px;
+        }
+        .img-responsive{
+            width:50px;
+            height:auto;
+        }
+        #search {
+            width: 59px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Quản Lý Nhà Sách</h2>
+        <ul class="list-group" id="menu">
+            <li class="list-group-item" data-target="sach">Sách</li>
+            <li class="list-group-item" data-target="Kho">Kho</li>
+            <li class="list-group-item" data-target="NhatKiNS">Nhật Kí Nhập Sách</li>
+            <li class="list-group-item" data-target="nhanvien">Nhân Viên</li>
+            <li class="list-group-item" data-target="khachhang">Khách Hàng</li>
+            <li class="list-group-item" data-target="taikhoan">Tài Khoản</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1 id="page-title">Danh Sách Sách</h1> 
+        <table class="table" id="sach-list">
+            <thead>
+                <tr>
+                    <th class="col-1">Mã Sách</th>
+                    <th class="col-2">Tên Sách</th>
+                    <th class="col-1">Image</th>
+                    <th class="col-1">Giá</th>
+                    <th class="col-1">Năm Xuất Bản</th>
+                    <th class="col-2">Nhà Xuất Bản</th>
+                    <th class="col-1">Tác Giả</th>
+                    <th class="col-1">Thể Loại</th>
+                    <th class="col-1"><button type="button" class="btn btn-success Them"><a href="/Admin/Add" style="color:white">Thêm</a></button></th>
+                    <th class="col-1">
+                        <form class="form_search" action="/Admin/Index">
+                           <input type="text" id="search" name="search" value="@ViewBag.Values" placeholder="Found">
+                            <button type="submit" class="btn btn-success small-button">
+                            <span class="Add"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </button>
+                        </form>
+                    </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+              
+                @foreach(var item in @ViewBag.ListBook)
+                {
+                    <tr>
+                    <td class="col-1">@item.MaSach</td>
+                    <td class="col-2">@item.TenSach</td>
+                    <td class="col-1"><img src="~/images/@item.Image" class="img-responsive" alt=""></td>
+                    <td class="col-1">@item.Gia</td>
+                    <td class="col-1">@item.NamXuatBan</td>
+                    <td class="col-2">@item.TenNXB</td>
+                    <td class="col-1">@item.TacGia</td>
+                    <td class="col-1">
+                        @item.TheLoai
+
+                    </td>
+                    <td class="col-1"><button type="button" class="btn btn-primary " style="margin-left:70px;width:85px"><a href="/Admin/Edit/@item.MaSach" style="color:wheat">Sửa</a></button></td>
+                    <td class="col-1"><button type="button" class="btn btn-danger " style="margin-left:15px;width:85px"><a href="/Admin/Delete/@item.MaSach" style="color:wheat">Xóa</a></button></td>
+                   
+
+                </tr>
+                }
+           
+                <!-- Thêm các dòng dữ liệu sách khác ở đây -->
+            </tbody>
+        </table>
+        <table class="table" id="Kho-list" style="display: none;">
+            <thead>
+                <tr>
+                    <th class="col-2">Mã Sách</th>
+                    <th class="col-4">Tên Sách</th>
+                    <th class="col-2">Tống Số lương Sách</th>
+                    <th class="col-4">Số Lượng Tồn</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in @ViewBag.List_SachKho)
+                {
+                     <tr>
+                        <td class="col-2">@item.MaSach1</td>
+                        <td class="col-4">@item.TenSach1</td>
+                        <td class="col-2">@item.TongSoLuong1</td>
+                        <td class="col-4">@item.SoLuongTon1</td>
+                     </tr>
+                }
+                <!-- Thêm các dòng dữ liệu tác giả khác ở đây -->
+            </tbody>
+        </table>
+
+        <table class="table" id="BKNS-list" style="display: none;">
+            <thead>
+                <tr>
+                    <th class="col-2">STT</th>
+                    <th class="col-2">Mã Sách</th>
+                    <th class="col-2">Số Lượng</th>
+                    <th class="col-2">Ngày Nhập</th>
+                    <th class="col-2">Mã Nhân Viên</th>
+                    <th class="col-2"><button type="button" class="btn btn-success Them"><a href="/Admin/ADD_NhatKiNS" style="color:white">Nhập Thêm Sản Phẩm</a></button></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in @ViewBag.ds_NKNS)
+                {
+                    <tr>
+                        <td class="col-2">@item.STT</td>
+                        <td class="col-2">@item.MaSach</td>
+                        <td class="col-3">@item.SoLuong</td>
+                        <td class="col-3">@item.NgayNhap</td>
+                        <td class="col-2">@item.MaNV</td>
+                        <td class="col-2"></td>
+                    </tr>
+                }
+                <!-- Thêm các dòng dữ liệu nhà xuất bản khác ở đây -->
+            </tbody>
+        </table>
+
+        <table class="table" id="NhanVien-list" style="display: none;">
+            <thead>
+                <tr>
+                    <th class ="col-1">Mã NV </th>
+                    <th class="col-2">Họ Tên </th>
+                    <th class="col-2">Số Điện Thoại </th>
+                    <th class="col-2">Địa Chỉ </th>
+                    <th class="col-2">Email </th>
+                    <th class="col-1"><button type="button" class="btn btn-success Them"><a href="/Admin/ThemTaiKhoanNhanVien" style="color:white">Thêm</a></button></th>
+                    <th class="col-2"></th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                
+                @foreach (var item in @ViewBag.ds_NV)
+                {
+                    <tr>
+                        <td class="col-1">@item.MaNV</td>
+                        <td class="col-2">@item.HoTen</td>
+                        <td class="col-2">@item.SDT</td>
+                        <td class="col-2">@item.DiaChi</td>
+                        <td class="col-2">@item.Email</td>
+                        <td class="col-1"><button type="button" class="btn btn-primary " style="margin-left:70px;width:85px"><a href="/Admin/SuaNhanVien/@item.MaNV" style="color:wheat">Sửa</a></button></td>
+                        <td class="col-1"><button type="button" class="btn btn-danger " style="margin-left:15px;width:85px"><a href="/Admin/XoaNhanVien/@item.MaNV" style="color:wheat">Xóa</a></button></td>
+                        <td class="col-1"></td>
+
+                    </tr>
+                }
+                <!-- Thêm các dòng dữ liệu thể loại khác ở đây -->
+            </tbody>
+        </table>
+
+        <table class="table" id="khachhang-list" style="display: none;">
+            <thead>
+                <tr>
+                    <th class="col-1">Mã KH </th>
+                    <th class="col-3">Họ Tên </th>
+                    <th class="col-2">Số Điện Thoại </th>
+                    <th class="col-3">Địa Chỉ </th>
+                    <th class="col-3">Email </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in @ViewBag.ds_KH)
+                {
+                    <tr>
+                        <td class="col-1">@item.MaKH</td>
+                        <td class="col-3">@item.TenKH</td>
+                        <td class="col-2">@item.SDT</td>
+                        <td class="col-3">@item.DiaChi</td>
+                        <td class="col-3">@item.Email</td>
+
+                    </tr>
+                }
+                <!-- Thêm các dòng dữ liệu thể loại khác ở đây -->
+            </tbody>
+        </table>
+
+        <table class="table" id="taikhoan-list" style="display: none;">
+            <thead>
+                <tr>
+                    <th class="col-3">Email</th>
+                    <th class="col-3">Mật Khẩu</th>
+                    <th class="col-3">Quyền</th>
+                    <td class="col-3"></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in @ViewBag.ds_TK)
+                {
+                    <tr>
+                        <td class="col-3">@item.Email</td>
+                        <td class="col-3">@item.MatKhau</td>
+                        <td class="col-3">@item.Quyen</td>
+                        <td class="col-3"><button type="button" class="btn btn-primary " style="margin-left:70px;width:85px"><a href="/Admin/SuaTaiKhoan/@item.Email" style="color:wheat">Sửa</a></button></td>
+                    </tr>
+                }
+                <!-- Thêm các dòng dữ liệu thể loại khác ở đây -->
+            </tbody>
+        </table>
+
+        <!-- Tạo các bảng danh sách cho các trang còn lại (Khách Hàng và Nhân Viên) tương tự -->
+    </div>
+
+    <script>
+        const menuItems = document.querySelectorAll("#menu li");
+        const contentContainers = {
+            sach: document.getElementById("sach-list"),
+            Kho: document.getElementById("Kho-list"),
+            NhatKiNS: document.getElementById("BKNS-list"),
+            nhanvien: document.getElementById("NhanVien-list"),
+            khachhang: document.getElementById("khachhang-list"),
+            taikhoan: document.getElementById("taikhoan-list"),
+            //nhanvien: document.getElementById("nhanvien-list"),
+        };
+
+        menuItems.forEach(item => {
+            item.addEventListener("click", () => {
+                const target = item.getAttribute("data-target");
+        const title = item.textContent;
+        document.getElementById("page-title").textContent = `Danh Sách ${title}`;
+
+        // Hiển thị nội dung tương ứng và ẩn các nội dung khác
+        for (const key in contentContainers) {
+            if (key === target) {
+                contentContainers[key].style.display = "table";
+            } else {
+                contentContainers[key].style.display = "none";
+            }
+        }
+        });
+        });
+    </script>
+</body>
+</html>
+

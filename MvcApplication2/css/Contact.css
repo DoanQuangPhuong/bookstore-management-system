@@ -1,0 +1,67 @@
+﻿.hero {
+            background-color: #007BFF;
+            color: #FFF;
+            text-align: center;
+            padding: 5rem 0;
+            margin-top:50px;
+        }
+
+        .contact-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 70px;
+            border-radius: 10px;
+            margin-top: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .label_Contact {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size:1.7rem;
+        }
+
+        .input_Contact,
+        .textarea_Contact {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            box-sizing: border-box;
+            font-size: 2.2rem;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #FFF;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .alert {
+            background-color: #28a745;
+            color: #FFF;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            display: none;
+            font-size: 1.1rem;
+        }

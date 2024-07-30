@@ -1,0 +1,66 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    /*
+    function dangnhap()
+    {
+        var user = document.getElementById('username').value;
+        var pass = document.getElementById('password').value;
+        if(user != "admin123@kt.vn" || pass == "123")
+        {
+            alert("your username is wrong");
+        }
+        else if(user == "admin123@kt.vn" || pass == "123")
+        {
+            alert("your password is wrong");
+        }
+        else
+        {
+            alert("your account is wrong");
+        }
+    }
+   */
+</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nhà Sách - Đăng Nhập</title>
+    <link href="~/css/bootstrap_online.css" rel="stylesheet" />
+    <link href="~/css/login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Đăng Nhập</h4>
+                    </div>
+                    <div class="card-body">
+                        <form action="/Home/Login" method="post">
+                            <div class="form-group">
+                                <label for="username">Tài khoản:</label>
+                                <input type="text" class="form-control" id="username" name="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                            <div class="form-group text-center">
+                                <a href="register.html">Chưa có tài khoản? Đăng ký ngay</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" onclick="dangnhap()">Đăng Nhập</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

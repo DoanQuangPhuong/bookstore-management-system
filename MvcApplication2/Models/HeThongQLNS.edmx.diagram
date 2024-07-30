@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="99df3fb6f6b94720850e5334a7ea471f" Name="Diagram1">
+        <EntityTypeShape EntityType="QLNSModel.tb_ChiTietDonHang" Width="1.5" PointX="11.625" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSModel.tb_DONHANG" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSModel.tb_KHACHHANG" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSModel.tb_KhoSach" Width="1.5" PointX="8" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSModel.tb_NHANVIEN" Width="1.5" PointX="5.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSModel.tb_NhatKiNhapSach" Width="1.5" PointX="10.5" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSModel.tb_SACH" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNSModel.tb_TaiKhoan" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <AssociationConnector Association="QLNSModel.FK_tb_ChiTietDonHang_tb_DONHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSModel.FK_tb_ChiTietDonHang_tb_SACH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSModel.FK_tb_DONHANG_tb_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSModel.FK_tb_DONHANG_tb_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSModel.FK_tb_KHACHHANG_tb_TaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSModel.FK_tb_KHACHHANG_tb_TaiKhoan1" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSModel.FK_tb_KhoSach_tb_SACH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSModel.FK_tb_NHANVIEN_tb_TaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSModel.FK_tb_NhatKiNhapSach_tb_NHANVIEN1" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSModel.FK_tb_NhatKiNhapSach_tb_SACH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNSModel.tb_NV_KH" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,32 @@
+﻿@model MvcApplication2.Models.tb_SACH
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/Default_Layout.cshtml";
+}
+
+<h1 style="text-align: center; position: relative; top: 80px; font-size: 3em;  font-family: 'Roboto', sans-serif; color: #333;  text-align: center;  margin-bottom: 0.5em;  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); ">Chi Tiết Sách</h1>
+<div class="container container_font" style="margin-top: 150px;" >
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <img src="~/images/@Model.Image" alt="Book Cover" class="book-cover">
+        </div>
+        <div class="col-md-8">
+            <div class="book-details">
+                <h2 class="mb-4" style="margin-bottom : 15px">Tên Sách : @Model.TenSach</h2>
+                <p style="margin-bottom : 15px"><strong>Tác Giả: </strong>@Model.TacGia</p>
+                <p style ="margin-bottom : 15px"><strong>Thể Loại: </strong>@Model.TheLoai</p>
+                <p style="margin-bottom : 15px"><strong>Năm Xuất Bản: </strong>@Model.NamXuatBan</p>
+                <button class="btn btn-primary" style="margin-bottom : 15px">Mua Sách</button>
+                <div class="rating mt-4">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="review-count">(20 đánh giá)</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

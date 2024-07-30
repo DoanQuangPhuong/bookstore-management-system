@@ -1,0 +1,112 @@
+﻿@using MvcApplication2;
+@model List<CartItem>
+@{
+    Layout = null;
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link href="~/css/bootstrap_online.css" rel="stylesheet" />
+    <style>
+        /* Thêm kiểu CSS tùy chỉnh ở đây */
+        .product-image {
+            max-width: 80px;
+        }
+
+        .product-quantity {
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Giỏ hàng</h1>
+        <table class="table" id="cartTable">
+            <thead>
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Hình ảnh</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Tổng tiền</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @*@foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.TenSach</td>
+                        <td><img src="~/images/@item.Image" alt="Áo phông" class="product-image"></td>
+                        <td class="product-price">@item.Gia</td>
+                        <td><input type="number" class="product-quantity" min="1" value="@item.Soluong" data-price="@item.Gia"></td>
+                        <td class="product-total">@item.Gia</td>
+                        <td><button class="btn btn-danger delete-product">Xóa</button></td>
+                    </tr>
+                }*@
+
+                <!-- Thêm các sản phẩm khác ở đây -->
+            </tbody>
+        </table>
+
+    </div>
+    @*<div class="container mt-5">
+            <h2 class="mb-4">Sản phẩm liên quan</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/m/u/mua-he-khong-ten---bia-mem---qua-tang-kem-1.jpg" alt="Sản phẩm 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Sản phẩm 1</h5>
+                            <p class="card-text">$50.00</p>
+                            <a href="product1.html" class="btn btn-primary">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/m/u/mua-he-khong-ten---bia-mem---qua-tang-kem-1.jpg" alt="Sản phẩm 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Sản phẩm 2</h5>
+                            <p class="card-text">$75.00</p>
+                            <a href="product2.html" class="btn btn-primary">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/m/u/mua-he-khong-ten---bia-mem---qua-tang-kem-1.jpg" alt="Sản phẩm 3" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Sản phẩm 3</h5>
+                            <p class="card-text">$90.00</p>
+                            <a href="product3.html" class="btn btn-primary">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/m/u/mua-he-khong-ten---bia-mem---qua-tang-kem-1.jpg" alt="Sản phẩm 4" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Sản phẩm 4</h5>
+                            <p class="card-text">$65.00</p>
+                            <a href="product4.html" class="btn btn-primary">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+   
+
+</body>
+</html>
+
+
+

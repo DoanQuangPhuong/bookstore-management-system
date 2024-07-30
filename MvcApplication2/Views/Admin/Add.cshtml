@@ -1,0 +1,101 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Sách</title>
+    <!-- Link CSS Bootstrap -->
+
+    <link href="~/css/bootstrap_online.css" rel="stylesheet" />
+    <style>
+        /* CSS tùy chỉnh để làm cho form nhỏ lại và căn giữa */
+        .custom-form {
+            max-width: 800px;
+            margin: auto;
+            border: 1px solid #ddd; /* Thêm border */
+            padding: 20px;
+            border-radius: 10px; /* Đổ bóng */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+        }
+
+            .custom-form img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px; /* Khoảng cách giữa ảnh và các trường khác */
+            }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem; /* Kích thước lớn hơn */
+            color: #007bff; /* Màu sắc chữ */
+            text-decoration: underline; /* Thêm đường gạch chân */
+            margin-bottom: 50px; /* Khoảng cách dưới */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Thêm Sách</h2>
+        <form class="custom-form" action="/Admin/Add" method="post">
+            <!-- Mã Sách -->
+            <div class="form-group">
+                <label for="maSach">Mã Sách:</label>
+                <input type="text" class="form-control" id="maSach" name="maSach" placeholder="Nhập Mã Sách" required>
+            </div>
+
+            <!-- Tên Sách -->
+            <div class="form-group">
+                <label for="tenSach">Tên Sách:</label>
+                <input type="text" class="form-control" id="tenSach" name="tenSach" placeholder="Nhập Tên Sách" required>
+            </div>
+
+            <!-- Hình Ảnh -->
+            <div class="form-group">
+                <label for="hinhAnh">Hình Ảnh:</label>
+                <input type="file" class="form-control" id="hinhAnh" name="hinhAnh" placeholder="URL Hình Ảnh" required>
+            </div>
+
+            <!-- Giá -->
+            <div class="form-group">
+                <label for="gia">Giá:</label>
+                <input type="text" class="form-control" id="gia" name="gia" placeholder="Nhập Giá" required>
+            </div>
+
+            <!-- Năm Xuất Bản -->
+            <div class="form-group">
+                <label for="namXuatBan">Năm Xuất Bản:</label>
+                <input type="text" class="form-control" id="namXuatBan" name="namXuatBan" placeholder="Nhập Năm Xuất Bản" required>
+            </div>
+
+            <!-- Tên Nhà Xuất Bản -->
+            <div class="form-group">
+                <label for="nhaXuatBan">Tên Nhà Xuất Bản:</label>
+                <input type="text" class="form-control" id="nhaXuatBan" name="nhaXuatBan" placeholder="Nhập Tên Nhà Xuất Bản" required>
+            </div>
+
+            <!-- Tác Giả -->
+            <div class="form-group">
+                <label for="tacGia">Tác Giả:</label>
+                <input type="text" class="form-control" id="tacGia" name="tacGia" placeholder="Nhập Tác Giả" required>
+            </div>
+
+            <!-- Thể Loại -->
+            <div class="form-group">
+                <label for="theLoai">Thể Loại:</label>
+                <input type="text" class="form-control" id="theLoai" name="theLoai" placeholder="Nhập Thể Loại" required>
+            </div>
+
+            <!-- Nút Submit -->
+            <button type="submit" class="btn btn-primary btn-block">Thêm Sách</button>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

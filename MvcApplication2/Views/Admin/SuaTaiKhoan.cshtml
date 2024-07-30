@@ -1,0 +1,97 @@
+﻿@model MvcApplication2.Models.tb_TaiKhoan
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Thêm Nhân Viên</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 700px; /* Đặt độ rộng của form */
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+        .success-message {
+            color: #4caf50;
+            font-weight: bold;
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #4caf50;
+            border-radius: 4px;
+            background-color: #e7f3e3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sửa Tài Khoản</h2>
+        <form id="SuaTaiKhoan">
+            <label for="Email">Tài Khoảng : </label>
+            <input type="text" id="Email" name="Email" value="@Model.Email" required readonly>
+
+            <label for="MatKhau">Mật Khẩu: </label>
+            <input type="text" id="MatKhau" name="MatKhau" value="@Model.MatKhau" required>
+
+            <label for="Quyen">Quyền : </label>
+            <input type="text" id="Quyen" name="Quyen" value="@Model.Quyen" required>
+            <button type="submit">Lưu</button>
+        </form>
+        <span id="successMessage" class="success-message"></span>
+    </div>
+</body>
+</html>
+
+
+

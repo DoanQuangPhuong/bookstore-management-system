@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sách trong kho</title>
+    <!-- Bạn cần bao gồm Bootstrap CSS -->
+    <link href="~/css/bootstrap_online.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 d-flex flex-column align-items-center">
+        <h2 class="text-center mb-4">Thông tin sách trong kho</h2>
+        <form class="w-100" action="/Admin/ThemSachMoiVaoKho" method="post">
+            <div class="form-group">
+                <label for="maKho">Mã kho:</label>
+                <input type="text" class="form-control" id="maKho" name="maKho" required>
+            </div>
+            <div class="form-group">
+                <label for="maSach">Mã sách:</label>
+                <input type="text" class="form-control" id="maSach" name="maSach" required>
+            </div>
+            <div class="form-group">
+                <label for="tongSoLuong">Tổng số lượng:</label>
+                <input type="number" class="form-control" id="tongSoLuong" name="tongSoLuong" required>
+            </div>
+            <div class="form-group">
+                <label for="soLuongTon">Số lượng tồn:</label>
+                <input type="number" class="form-control" id="soLuongTon" name="soLuongTon" required>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+   
+</body>
+</html>

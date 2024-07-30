@@ -1,0 +1,113 @@
+﻿@using MvcApplication2;
+
+@model List<CartItem>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link href="~/css/bootstrap_online.css" rel="stylesheet" />
+    <style>
+        /* Thêm kiểu CSS tùy chỉnh ở đây */
+        .product-image {
+            max-width: 80px;
+        }
+
+        .product-quantity {
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Giỏ hàng</h1>
+        <table class="table" id="cartTable">
+            <thead>
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Hình ảnh</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Tổng tiền</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.TenSach</td>
+                            <td><img src="~/images/@item.Image" alt="Áo phông" class="product-image"></td>
+                            <td class="product-price">@item.Gia</td>
+                            <td><input type="number" class="product-quantity" min="1" value="@item.Soluong" data-price="@item.Gia"></td>
+                            <td class="product-total">@item.Gia</td>
+                            <td><button class="btn btn-danger delete-product">Xóa</button></td>
+                        </tr>
+                     }
+
+                <tr id="total-row">
+                    <td colspan="4"></td>
+                    <td>Thành Tiền : <span class="cart-total"></span></td>
+                    <td><button id="checkout-btn" class="btn btn-primary">Đặt hàng</button></td>
+                </tr>
+                <!-- Thêm các sản phẩm khác ở đây -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <script>
+//Tính Tiền 
+        document.addEventListener("DOMContentLoaded", function () {
+            //Update lần đầu tiên load trang lên
+            updateTotal();
+            //Khi Input số lượng có sự thay đổi về mặt số lượng thì hàm updateTotal Cập nhập thành tiền sẽ đc chạy
+            document.querySelectorAll(".product-quantity").forEach(function (quantityInput) {
+                quantityInput.addEventListener("input", function () {
+                    updateTotal();
+                });
+            });
+            //Khi Button Xóa được Click thì hàm updateTotal Cập nhập thành tiền sẽ đc chạy
+            document.querySelectorAll(".delete-product").forEach(function (deleteButton) {
+                deleteButton.addEventListener("click", function () {
+                    updateTotal();
+                });
+            });
+            //Hàm Cập nhật thành tiền
+            function updateTotal() {
+                var total = 0;
+                document.querySelectorAll(".product-quantity").forEach(function (quantityInput) {
+                    var quantity = parseFloat(quantityInput.value);
+                    var price = parseFloat(quantityInput.getAttribute("data-price"));
+                    var productTotal = isNaN(quantity) || isNaN(price) ? 0 : quantity * price;
+                    total += productTotal;
+                });
+
+                document.querySelector(".cart-total").textContent = total.toFixed(2) + " VND";
+            }
+        });
+    </script>
+
+    <script>
+        //Xóa Sản Phẩm Trong giỏ Hàng
+        document.addEventListener('DOMContentLoaded', function () {
+            const deleteButtons = document.querySelectorAll('.delete-product');
+
+            deleteButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const row = this.closest('tr');
+                    row.remove();
+            });
+        });
+        });
+    </script>
+    
+
+</body>
+</html>
+

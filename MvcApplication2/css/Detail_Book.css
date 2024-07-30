@@ -1,0 +1,58 @@
+﻿.container_font{
+      padding:100px;
+      background-color: #f8f9fa;
+      font-family: 'Roboto', sans-serif;
+}
+
+
+.book-cover {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .book-details {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #007bff;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #495057;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+    
+    .rating {
+      align-items: center;
+      margin-top: 15px;
+    }
+
+    .star {
+      color: #f8c400;
+      margin-right: 5px;
+    }
+
+    .review-count {
+      margin-left: 5px;
+      color: #555;
+    }

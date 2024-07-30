@@ -1,0 +1,28 @@
+﻿body {
+            background-image: url('https://file.vfo.vn/hinh/2016/01/hinh-nen-quyen-sach-2.jpg'); /* Đường dẫn đến hình nền của bạn */
+            background-size: cover; /* Đảm bảo hình nền sẽ che phủ toàn bộ màn hình */
+            background-position: center; /* Căn hình nền theo giữa */
+            height: 100vh; /* Đảm bảo chiều cao của hình nền bằng chiều cao của màn hình */
+            margin: 0; /* Loại bỏ margin mặc định của trang */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #007bff; /* Màu nền xanh */
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 10px 10px 0 0;
+        }

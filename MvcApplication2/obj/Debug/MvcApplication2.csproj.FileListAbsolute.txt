@@ -1,0 +1,168 @@
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\MvcApplication2.dll.config
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\MvcApplication2.dll
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\MvcApplication2.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\Microsoft.Web.Infrastructure.dll
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\Newtonsoft.Json.dll
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.Helpers.dll
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.Mvc.dll
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.Razor.dll
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Deployment.dll
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.dll
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Razor.dll
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\Newtonsoft.Json.xml
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.Helpers.xml
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.Mvc.xml
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.Razor.xml
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.xml
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Deployment.xml
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Razor.xml
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.dll
+c:\users\administrator\documents\visual studio 2013\Projects\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.pdb
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\MvcApplication2.dll.config
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\MvcApplication2.dll
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\MvcApplication2.pdb
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.Razor.dll
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.Razor.xml
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.dll
+C:\Users\Administrator\Downloads\Buoi1-2\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.pdb
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\MvcApplication2.dll.config
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\MvcApplication2.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\MvcApplication2.pdb
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\Newtonsoft.Json.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Net.Http.Formatting.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.Helpers.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.Http.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.Http.WebHost.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.Mvc.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.Razor.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Razor.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\Newtonsoft.Json.xml
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Net.Http.Formatting.xml
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.Helpers.xml
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.Http.xml
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.Http.WebHost.xml
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.Mvc.xml
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.Razor.xml
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.xml
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Razor.xml
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.csprojResolveAssemblyReference.cache
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.dll
+C:\Users\duy00\Downloads\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.pdb
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\MvcApplication2.dll.config
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\MvcApplication2.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\MvcApplication2.pdb
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\Newtonsoft.Json.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Net.Http.Formatting.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.Helpers.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.Http.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.Http.WebHost.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.Mvc.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.Razor.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Razor.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\Newtonsoft.Json.xml
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Net.Http.Formatting.xml
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.Helpers.xml
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.Http.xml
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.Http.WebHost.xml
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.Mvc.xml
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.Razor.xml
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.xml
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\System.Web.WebPages.Razor.xml
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.csprojResolveAssemblyReference.cache
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\obj\Debug\MvcApplication2.pdb
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\EntityFramework.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\EntityFramework.SqlServer.dll
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\EntityFramework.xml
+C:\Users\MSI-VN\Desktop\MvcApplication2\MvcApplication2\bin\EntityFramework.SqlServer.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\MvcApplication2.dll.config
+D:\QuanLyCuaHangSach\MvcApplication2\bin\MvcApplication2.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\MvcApplication2.pdb
+D:\QuanLyCuaHangSach\MvcApplication2\bin\EntityFramework.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\EntityFramework.SqlServer.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\Microsoft.Web.Infrastructure.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\Newtonsoft.Json.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Net.Http.Formatting.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.Helpers.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.Http.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.Http.WebHost.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.Mvc.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.Razor.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.WebPages.Deployment.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.WebPages.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.WebPages.Razor.dll
+D:\QuanLyCuaHangSach\MvcApplication2\bin\EntityFramework.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\EntityFramework.SqlServer.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\Newtonsoft.Json.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Net.Http.Formatting.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.Helpers.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.Http.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.Http.WebHost.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.Mvc.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.Razor.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.WebPages.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.WebPages.Deployment.xml
+D:\QuanLyCuaHangSach\MvcApplication2\bin\System.Web.WebPages.Razor.xml
+D:\QuanLyCuaHangSach\MvcApplication2\obj\Debug\MvcApplication2.csprojResolveAssemblyReference.cache
+D:\QuanLyCuaHangSach\MvcApplication2\obj\Debug\MvcApplication2.dll
+D:\QuanLyCuaHangSach\MvcApplication2\obj\Debug\MvcApplication2.pdb
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\MvcApplication2.dll.config
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\MvcApplication2.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\MvcApplication2.pdb
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\EntityFramework.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\EntityFramework.SqlServer.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\Microsoft.Web.Infrastructure.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\Newtonsoft.Json.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Net.Http.Formatting.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.Helpers.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.Http.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.Http.WebHost.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.Mvc.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.Razor.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.WebPages.Deployment.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.WebPages.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.WebPages.Razor.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\EntityFramework.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\EntityFramework.SqlServer.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\Newtonsoft.Json.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Net.Http.Formatting.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.Helpers.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.Http.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.Http.WebHost.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.Mvc.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.Razor.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.WebPages.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.WebPages.Deployment.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\bin\System.Web.WebPages.Razor.xml
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\obj\Debug\MvcApplication2.csprojResolveAssemblyReference.cache
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\obj\Debug\MvcApplication2.dll
+D:\QuanLyCuaHangSach\bookstore-management-system\MvcApplication2\obj\Debug\MvcApplication2.pdb

@@ -1,0 +1,733 @@
+﻿@model List<MvcApplication2.Models.tb_SACH>
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    string iconclass = string.Empty;
+    if (@ViewBag.IconClass == "Giam")
+    {
+        iconclass = "Tang";
+    }
+    else
+    {
+        iconclass = "Giam";
+    }
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>KT Book Store</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="og:title" content="Vide">
+    <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- //for-mobile-apps -->
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom Theme files -->
+    <link href="~/css/style.css" rel="stylesheet" type="text/css">
+    <!-- js -->
+    <script src="~/js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" type="text/css">
+    <!--- start-rate---->
+    <script src="js/jstarbox.js"></script>
+    <link rel="stylesheet" href="css/jstarbox.css" type="text/css" media="screen" charset="utf-8">
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('.starbox').each(function () {
+                var starbox = jQuery(this);
+                starbox.starbox({
+                    average: starbox.attr('data-start-value'),
+                    changeable: starbox.hasClass('unchangeable') ? false : starbox.hasClass('clickonce') ? 'once' : true,
+                    ghosting: starbox.hasClass('ghosting'),
+                    autoUpdateAverage: starbox.hasClass('autoupdate'),
+                    buttons: starbox.hasClass('smooth') ? false : starbox.attr('data-button-count') || 5,
+                    stars: starbox.attr('data-star-count') || 5
+                }).bind('starbox-value-changed', function (event, value) {
+                    if (starbox.hasClass('random')) {
+                        var val = Math.random();
+                        starbox.next().text(' ' + val);
+                        return val;
+                    }
+                })
+            });
+        });
+    </script>
+    <!---//End-rate---->
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+
+        <div class="container">
+
+            <div class="logo">
+                <h1><a href="/Home/Index"><b>T<br>H<br>E</b>KT Book Store<span>Best Place For Your Knowledge</span></a></h1>
+            </div>
+            <div class="head-t">
+                <ul class="card">
+                    <li><a href="wishlist.html"><i class="fa fa-heart" aria-hidden="true"></i>Wishlist</a></li>
+                    <li><a href="~/Views/Home/Login.cshtml"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+
+                    <li><a href="register.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Register</a></li>
+                    <li><a href="about.html"><i class="fa fa-file-text-o" aria-hidden="true"></i>Order History</a></li>
+                    <li><a href="shipping.html"><i class="fa fa-ship" aria-hidden="true"></i>Shipping</a></li>
+                </ul>
+            </div>
+
+            <div class="header-ri">
+                <ul class="social-top">
+                    <li><a href="#" class="icon facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span></span></a></li>
+                    <li><a href="#" class="icon twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span></span></a></li>
+                    <li><a href="#" class="icon pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i><span></span></a></li>
+                    <li><a href="#" class="icon dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i><span></span></a></li>
+                </ul>
+            </div>
+
+
+            <div class="nav-top">
+                <nav class="navbar navbar-default">
+
+                    <div class="navbar-header nav_2">
+                        <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                        <ul class="nav navbar-nav ">
+                            <li class=" active"><a href="/Home/Index" class="hyper "><span>Home</span></a></li>
+
+                            <li class="dropdown ">
+                                <a href="#" class="dropdown-toggle  hyper" data-toggle="dropdown"><span>Sách Tiểu Thuyết - Kỳ Bí<b class="caret"></b></span></a>
+                                <ul class="dropdown-menu multi">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <ul class="multi-column-dropdown">
+
+                                                <li><a href="pccomponent.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Công nghệ thông tin</a></li>
+                                                <li><a href="pccomponent.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Khoa học tự nhiên</a></li>
+                                                <li><a href="pccomponent.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Điện - Điện tử</a></li>
+
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+
+                                <a href="#" class="dropdown-toggle hyper" data-toggle="dropdown"><span>Sách Thiếu Nhi - Sách Giáo Khoa<b class="caret"></b></span></a>
+                                <ul class="dropdown-menu multi multi1">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <ul class="multi-column-dropdown">
+                                                <li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Truyện tranh</a></li>
+                                                <li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Sách tô màu</a></li>
+                                                <li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle hyper" data-toggle="dropdown"><span>Sách Chính Trị Kinh Tế - Xã Hội<b class="caret"></b></span></a>
+                                <ul class="dropdown-menu multi multi2">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <ul class="multi-column-dropdown">
+                                                <li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Sách Lịch sử</a></li>
+                                                <li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Luật Pháp</a></li>
+                                                <li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Văn Hóa</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li><a href="/Home/Contact" class="hyper"><span>Liên Hệ</span></a></li>
+                            <li><a href="/Home/About" class="hyper"><span>Giới Thiệu</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="cart">
+                    <a href="/Home/Cart"><span class="fa fa-shopping-cart my-cart-icon" style="position: absolute; background-color: inherit; z-index: 999;"></span></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+    <!---->
+    <div class="search-form">
+        <form action="#" method="post" style="background-color: #93918e">
+            <input type="text" placeholder="Tìm Kiếm" name="search">
+            <input type="submit" value=" ">
+        </form>
+    </div>
+    <!--content-->
+    <div class="content-top ">
+        <div class="container ">
+            <div class="spec ">
+                <h3>Special Offers</h3>
+                <div class="ser-t">
+                    <b></b>
+                    <span><i></i></span>
+                    <b class="line"></b>
+                </div>
+            </div>
+            <div class="tab-head ">
+                <nav class="nav-sidebar">
+                    <ul class="nav tabs ">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Tiểu Thuyết</a></li>
+                        <li class=""><a href="#tab2" data-toggle="tab">Thiếu Nhi</a></li>
+                        <li class=""><a href="#tab3" data-toggle="tab">Kinh Tế</a></li>
+
+                    </ul>
+                </nav>
+                <div class=" tab-content tab-content-t ">
+                    <div class="tab-pane active text-style" id="tab1">
+                        <div class=" con-w3l">
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal1" class="offer-img">
+                                        <img src="~/images/h1.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6><a href="single.html">Cây Cam Ngọt Của Tôi(Tái Bản 2023)</a></h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>86.4 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="1" data-name="Cây Cam Ngọt Của Tôi(Tái Bản 2023)" data-gia="86.4" data-image="h1.jpg">Add to Cart</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal2" class="offer-img">
+                                        <img src="~/images/h2.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6>Nhà Giả Kim (Tái Bản 2020)</h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>63.299 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="2" data-name="Nhà Giả Kim (Tái Bản 2020)" data-gia="63.299" data-image="h2.jpg">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal3" class="offer-img">
+                                        <img src="~/images/h3.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6>Chưa Kịp Lớn Đã Trưởng Thành (Tái Bản 2023)</h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>45.6 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="3" data-name="Chưa Kịp Lớn Đã Trưởng Thành (Tái Bản 2023)" data-gia="45.6" data-image="h3.jpg">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal4" class="offer-img">
+                                        <img src="~/images/h4.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6>Thám Tử Lừng Danh Conan - Tiểu Thuyết</h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>54 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="4" data-name="Thám Tử Lừng Danh Conan - Tiểu Thuyết" data-gia="54" data-image="h4.jpg">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  text-style" id="tab2">
+                        <div class=" con-w3l">
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal5" class="offer-img">
+                                        <img src="~/images/h5.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6>Đất Rừng Phương Nam (Tái Bản)</h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>34 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="5" data-name="Đất Rừng Phương Nam (Tái Bản)" data-gia="34" data-image="h5.jpg">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal6" class="offer-img">
+                                        <img src="~/images/h6.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6>Tuổi Thơ Dữ Dội - Tập 2 (Tái Bản 2019)</h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>66 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="6" data-name="Tuổi Thơ Dữ Dội - Tập 2 (Tái Bản 2019)" data-gia="66" data-image="h6.jpg">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal7" class="offer-img">
+                                        <img src="~/images/h7.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6>Giáo Dục Đầu Đời Cho Trẻ(Tái Bản 2016)</h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>35 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="7" data-name="Giáo Dục Đầu Đời Cho Trẻ(Tái Bản 2016)" data-gia="35" data-image="h7.jpg">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal8" class="offer-img">
+                                        <img src="~/images/h8.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6>Lớp Học Mật Ngữ Phiên Bản Mới </h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>25.5 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="8" data-name="Lớp Học Mật Ngữ Phiên Bản Mới" data-gia="25.5" data-image="h8.jpg">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  text-style" id="tab3">
+                        <div class=" con-w3l">
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal9" class="offer-img">
+                                        <img src="~/images/h11.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6>Nhà Lãnh Đạo Tương Lai (Tái Bản 2023)</h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>220 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="9" data-name="Nhà Lãnh Đạo Tương Lai (Tái Bản 2023)" data-gia="220" data-image="h9.jpg">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal10" class="offer-img">
+                                        <img src="~/images/h12.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6>Nghệ Thuật Tư Duy Chiến Lược</h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>180 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="10" data-name="Nghệ Thuật Tư Duy Chiến Lược" data-gia="180" data-image="h10.jpg">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal11" class="offer-img">
+                                        <img src="~/images/h13.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6>Triết Lý Làm Giàu Của Người Do Thái</h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>123 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="11" data-name="Triết Lý Làm Giàu Của Người Do Thái" data-gia="123" data-image="h11.jpg">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 m-wthree">
+                                <div class="col-m">
+                                    <a href="#" data-toggle="modal" data-target="#myModal12" class="offer-img">
+                                        <img src="~/images/h11.jpg" class="img-responsive" alt="">
+                                        <div class="offer"><p><span>Offer</span></p></div>
+                                    </a>
+                                    <div class="mid-1">
+                                        <div class="women">
+                                            <h6>Kiếm Tiền Với Chat GPT (Tái Bản năm 2023)</h6>
+                                        </div>
+                                        <div class="mid-2">
+                                            <p>126 $</p>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="add">
+                                            <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="12" data-name="Kiếm Tiền Với Chat GPT (Tái Bản năm 2023)" data-gia="126" data-image="h12.jpg">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Carousel
+      ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active left">
+                <a href="pccomponent.html"> <img class="first-slide" src="https://static.kinhtedothi.vn/images/upload/2022/03/12/sach-7.jpg" alt="First slide"></a>
+
+            </div>
+            <div class="item next left">
+                <a href="gaminggear.html"> <img class="second-slide " src="https://vuthuvien.bvhttdl.gov.vn/wp-content/uploads/2023/02/12.jpg" alt="Second slide"></a>
+
+            </div>
+            <div class="item">
+                <a href="console.html"><img class="third-slide " src="https://img.tekzone.vn/wp-content/uploads/2023/09/2_tekzone-36580.jpg" alt="Third slide"></a>
+
+            </div>
+        </div>
+
+    </div><!-- /.carousel -->
+    <!--------------------------------------------------------content--------------------------------------------------- -->
+    <div class="product">
+        <div class="container">
+            <div class="spec ">
+                <h3>Top Selling</h3>
+                <div class="ser-t">
+                    <b></b>
+                    <span><i></i></span>
+                    <b class="line"></b>
+                </div>
+            </div>
+            <select class="form-control form-control-sm" id="selectedValue" style="width: 261px; margin-bottom:100px" onchange="redirectToPage(this.value)">
+                <option value="/Home/Index?sortColumn=Gia&IconClass=@iconclass">Giá: Từ Thấp Đến Cao</option>
+                <option value="/Home/Index?sortColumn=Gia&IconClass=@iconclass">Giá: Từ Cao Đến Thấp</option>
+            </select>
+            <!--------------------------------------------------------Danh Sach San Pham--------------------------------------------------- -->
+            <div class=" con-w3l">
+                @foreach(var item in Model)
+                {
+                    <div class="col-md-3 pro-1">
+                    <div class="col-m">
+                        <a href="#" data-toggle="modal" data-target="#myModal17" class="offer-img">
+                            <img src="~/images/@item.Image" class="img-responsive" alt="">
+                        </a>
+                        <div class="mid-1">
+                            <div class="women">
+                                <h6><a href="/Home/Detail/@item.MaSach">@item.TenSach</a></h6>
+                            </div>
+                            <div class="mid-2">
+                                <p><em class="item_price">@item.Gia VND</em></p>
+
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="add add-2">
+                                <button class="btn btn-danger my-cart-btn my-cart-b add-to-cart" data-id="@item.MaSach" data-name="@item.TenSach" data-gia="@item.Gia" data-image="@item.Image">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+                <div class="clearfix"></div>
+            </div>
+            <div class="container">
+                @{
+                    int PrevPage = ViewBag.Page - 1;
+                    if (PrevPage <= 0)
+                    {
+                        PrevPage = 1;
+                    }
+                    int NextPage = ViewBag.Page + 1;
+                    if (NextPage > ViewBag.NoOfPages)
+                    {
+                        NextPage = ViewBag.NoOfPages;
+                    }
+                }
+                <nav aria-label="Page navigation example" class="center_nav">
+                    <ul class="pagination" style="justify-content: center; margin-top: 20px;margin-left:470px ">
+                        <li class="page-item"><a class="page-link" href="/Home/Index?sortColumn=Gia&IconClass=@iconclass&page=@PrevPage">Trang Trước</a></li>
+                        @for(int i = 0;i < ViewBag.NoOfPages;i++)
+                        {
+                            if(i + 1 == ViewBag.Page)
+                            {
+                                <li class="page-item active"><a class="page-link" href="/Home/Index?sortColumn=Gia&IconClass=@iconclass&page=@(i + 1)">@(i+1)</a></li>
+                            }
+                            else
+                            {
+                                <li class="page-item"><a class="page-link" href="/Home/Index?sortColumn=Gia&IconClass=@iconclass&page=@(i + 1)">@(i+1)</a></li>
+                            } 
+                        }
+                        <li class="page-item active"><a class="page-link" href="/Home/Index?sortColumn=Gia&IconClass=@iconclass&page=@NextPage">Trang Sau</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="col-md-3 footer-grid">
+                <h3>About Us</h3>
+                <p>KT Book Store - Việc đọc rất quan trọng. Nếu bạn biết cách đọc, cả thế giới sẽ mở ra cho bạn </p>
+            </div>
+            <div class="col-md-3 footer-grid ">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="/Home/Index">Home</a></li>
+                    <li><a href="pccomponent.html">Sách Khoa Học - Công Nghệ</a></li>
+                    <li><a href="gaminggear.html">Sách Thiếu Nhi</a></li>
+                    <li><a href="console.html">Chính Trị - Xã Hội</a></li>
+                    <!-- <li><a href="codes.html">Short Codes</a></li> -->
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                    <li><a href="/Home/About">Giới Thiệu</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid ">
+                <h3>Customer Services</h3>
+                <ul>
+                    <li><a href="/Home/Contact">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="footer-bottom">
+                <h2><a href="/Home/Index"><b>T<br>H<br>E</b>KT Computer Store<span>Best Place For Your Knowledge</span></a></h2>
+                <p class="fo-para">KT Computer Store - Best place for buying Computer Components and Gaming Gears with a really low price.</p>
+                <ul class="social-fo">
+                    <li><a href="#" class=" face"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class=" twi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class=" pin"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class=" dri"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class=" address">
+                    <div class="col-md-4 fo-grid1">
+                        <p><i class="fa fa-home" aria-hidden="true"></i>Hải Triều, Bến Nghé, Distrct 1, Hồ Chí Minh City.</p>
+                    </div>
+                    <div class="col-md-4 fo-grid1">
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>+1234 567 890 , +0919 113 114</p>
+                    </div>
+                    <div class="col-md-4 fo-grid1">
+                        <p><a href="mailto:info@example.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>KTBookStore@gmail.com</a></p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer-->
+    <!-- smooth scrolling -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+                };
+            */
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+    <a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!-- //smooth scrolling -->
+    <!-- for bootstrap working -->
+    <script src="js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+  
+
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="js/jquery.vide.min.js"></script>
+    @*<script>
+        document.querySelectorAll('.my-cart-btn').forEach(function (button) {
+            button.addEventListener('click', function () {
+                // Hiển thị thông báo đẹp với SweetAlert
+                showSuccessAlert('Thêm thành công!');
+
+                // Các hành động khác có thể được thực hiện ở đây
+            });
+        });
+
+        // Hàm để hiển thị thông báo đẹp với SweetAlert
+        function showSuccessAlert(message) {
+            alert(message);
+        }
+    </script>*@
+
+    <script>
+        
+        // Hàm chuyển hướng đến trang được chọn
+        function redirectToPage(page) {
+            if (page) {
+                window.location.href = page;
+            }
+        }
+   
+        // Function to update the selected value
+        
+    </script>
+
+    
+    <script>
+        //Thêm Sản Phẩm
+        $(document).ready(function () {
+            $(".add-to-cart").click(function () {
+                var productId = $(this).data("id");
+                var productName = $(this).data("name");
+                var price = $(this).data("gia");
+                var image = $(this).data("image");
+
+                $.ajax({
+                    url: "/Home/AddToCart",
+                    type: "POST",
+                    data: { Masach: productId, TenSach: productName, Gia: price, Image: image },
+                    success: function (data) {
+                        alert("Thêm Vào Giỏ Hàng Thành Công");
+                    }
+                });
+            });
+        });
+    </script>
+
+   
+
+</body>
+</html>

@@ -1,0 +1,464 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>KT Book Store</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="og:title" content="Vide">
+    <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- //for-mobile-apps -->
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="~/css/Detail_Book.css" rel="stylesheet" type="text/css">
+    <link href="~/css/Contact.css" rel="stylesheet" type="text/css">
+    <link href="~/css/About.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom Theme files -->
+    <link href="~/css/style.css" rel="stylesheet" type="text/css">
+    <!-- js -->
+    <script src="~/js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" type="text/css">
+    <!--- start-rate---->
+    <script src="js/jstarbox.js"></script>
+    <link rel="stylesheet" href="css/jstarbox.css" type="text/css" media="screen" charset="utf-8">
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('.starbox').each(function () {
+                var starbox = jQuery(this);
+                starbox.starbox({
+                    average: starbox.attr('data-start-value'),
+                    changeable: starbox.hasClass('unchangeable') ? false : starbox.hasClass('clickonce') ? 'once' : true,
+                    ghosting: starbox.hasClass('ghosting'),
+                    autoUpdateAverage: starbox.hasClass('autoupdate'),
+                    buttons: starbox.hasClass('smooth') ? false : starbox.attr('data-button-count') || 5,
+                    stars: starbox.attr('data-star-count') || 5
+                }).bind('starbox-value-changed', function (event, value) {
+                    if (starbox.hasClass('random')) {
+                        var val = Math.random();
+                        starbox.next().text(' ' + val);
+                        return val;
+                    }
+                })
+            });
+        });
+    </script>
+    <!---//End-rate---->
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="header">
+
+        <div class="container">
+
+            <div class="logo">
+                <h1><a href="/Home/Index"><b>T<br>H<br>E</b>KT Book Store<span>Best Place For Your Knowledge</span></a></h1>
+            </div>
+            <div class="head-t">
+                <ul class="card">
+                    <li><a href="wishlist.html"><i class="fa fa-heart" aria-hidden="true"></i>Wishlist</a></li>
+                    <li><a href="~/Views/Home/Login.cshtml"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+
+                    <li><a href="register.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Register</a></li>
+                    <li><a href="about.html"><i class="fa fa-file-text-o" aria-hidden="true"></i>Order History</a></li>
+                    <li><a href="shipping.html"><i class="fa fa-ship" aria-hidden="true"></i>Shipping</a></li>
+                </ul>
+            </div>
+
+            <div class="header-ri">
+                <ul class="social-top">
+                    <li><a href="#" class="icon facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span></span></a></li>
+                    <li><a href="#" class="icon twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span></span></a></li>
+                    <li><a href="#" class="icon pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i><span></span></a></li>
+                    <li><a href="#" class="icon dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i><span></span></a></li>
+                </ul>
+            </div>
+
+
+            <div class="nav-top">
+                <nav class="navbar navbar-default">
+
+                    <div class="navbar-header nav_2">
+                        <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                        <ul class="nav navbar-nav ">
+                            <li class=" active"><a href="/Home/Index" class="hyper "><span>Home</span></a></li>
+
+                            <li class="dropdown ">
+                                <a href="#" class="dropdown-toggle  hyper" data-toggle="dropdown"><span>Sách Khoa học - Công nghệ<b class="caret"></b></span></a>
+                                <ul class="dropdown-menu multi">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <ul class="multi-column-dropdown">
+
+                                                <li><a href="pccomponent.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Công nghệ thông tin</a></li>
+                                                <li><a href="pccomponent.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Khoa học tự nhiên</a></li>
+                                                <li><a href="pccomponent.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Điện - Điện tử</a></li>
+
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+
+                                <a href="#" class="dropdown-toggle hyper" data-toggle="dropdown"><span>Sách Thiếu Nhi<b class="caret"></b></span></a>
+                                <ul class="dropdown-menu multi multi1">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <ul class="multi-column-dropdown">
+                                                <li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Truyện tranh</a></li>
+                                                <li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Sách tô màu</a></li>
+                                                <li><a href="gaminggear.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle hyper" data-toggle="dropdown"><span>Sách Chính Trị - Xã Hội<b class="caret"></b></span></a>
+                                <ul class="dropdown-menu multi multi2">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <ul class="multi-column-dropdown">
+                                                <li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Sách Lịch sử</a></li>
+                                                <li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Luật Pháp</a></li>
+                                                <li><a href="console.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Văn Hóa</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li><a href="/Home/Contact" class="hyper"><span>Liên Hệ</span></a></li>
+                            <li><a href="/Home/About" class="hyper"><span>Giới Thiệu</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="cart">
+                    <a href="/Home/Cart"><span class="fa fa-shopping-cart my-cart-icon" style="position: absolute; background-color: inherit; z-index: 999;"><span class="badge badge-notify my-cart-badge">0</span></span></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+    <!---->
+    <div class="search-form">
+        <form action="#" method="post" style="background-color: #93918e">
+            <input type="text" placeholder="Tìm Kiếm" name="search">
+            <input type="submit" value=" ">
+        </form>
+    </div>
+    
+
+    <!-- Carousel
+      ================================================== -->
+    <div>
+        @RenderBody()
+    </div>
+    <!-- /.carousel -->
+    <!--------------------------------------------------------content--------------------------------------------------- -->
+    @*<div class="product">
+        <div class="container">
+            <div class="spec ">
+                <h3>Top Selling</h3>
+                <div class="ser-t">
+                    <b></b>
+                    <span><i></i></span>
+                    <b class="line"></b>
+                </div>
+            </div>
+            <select class="form-control form-control-sm" id="selectedValue" style="width: 261px; margin-bottom:100px" onchange="redirectToPage(this.value)">
+                <option value="/Home/Index?sortColumn=Gia&IconClass=@iconclass">Giá: Từ Thấp Đến Cao</option>
+                <option value="/Home/Index?sortColumn=Gia&IconClass=@iconclass">Giá: Từ Cao Đến Thấp</option>
+            </select>
+            <div class=" con-w3l">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 pro-1">
+                        <div class="col-m">
+                            <a href="#" data-toggle="modal" data-target="#myModal17" class="offer-img">
+                                <img src="~/images/@item.Image" class="img-responsive" alt="">
+                            </a>
+                            <div class="mid-1">
+                                <div class="women">
+                                    <h6>@item.TenSach</h6>
+                                </div>
+                                <div class="mid-2">
+                                    <p><em class="item_price">@item.Gia VND</em></p>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="add add-2">
+                                    <button class="btn btn-danger my-cart-btn my-cart-b" data-id="5" data-name="ROG Strix GeForce RTX 2080 Ti OC" data-summary="summary 5" data-price="36990000" data-quantity="1" data-image="images/of4.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="clearfix"></div>
+            </div>
+            <div class="container">
+                @{
+                    int PrevPage = ViewBag.Page - 1;
+                    if (PrevPage <= 0)
+                    {
+                        PrevPage = 1;
+                    }
+                    int NextPage = ViewBag.Page + 1;
+                    if (NextPage > ViewBag.NoOfPages)
+                    {
+                        NextPage = ViewBag.NoOfPages;
+                    }
+                }
+                <nav aria-label="Page navigation example" class="center_nav">
+                    <ul class="pagination" style="justify-content: center; margin-top: 20px;margin-left:470px ">
+                        <li class="page-item"><a class="page-link" href="/Home/Index?sortColumn=Gia&IconClass=@iconclass&page=@PrevPage">Trang Trước</a></li>
+                        @for (int i = 0; i < ViewBag.NoOfPages; i++)
+                        {
+                            if (i + 1 == ViewBag.Page)
+                            {
+                                <li class="page-item active"><a class="page-link" href="/Home/Index?sortColumn=Gia&IconClass=@iconclass&page=@(i + 1)">@(i + 1)</a></li>
+                            }
+                            else
+                            {
+                                <li class="page-item"><a class="page-link" href="/Home/Index?sortColumn=Gia&IconClass=@iconclass&page=@(i + 1)">@(i + 1)</a></li>
+                            }
+                        }
+                        <li class="page-item active"><a class="page-link" href="/Home/Index?sortColumn=Gia&IconClass=@iconclass&page=@NextPage">Trang Sau</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>*@
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="col-md-3 footer-grid">
+                <h3>About Us</h3>
+                <p>KT Book Store - Việc đọc rất quan trọng. Nếu bạn biết cách đọc, cả thế giới sẽ mở ra cho bạn </p>
+            </div>
+            <div class="col-md-3 footer-grid ">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="/Home/Index">Home</a></li>
+                    <li><a href="pccomponent.html">Sách Khoa Học - Công Nghệ</a></li>
+                    <li><a href="gaminggear.html">Sách Thiếu Nhi</a></li>
+                    <li><a href="console.html">Chính Trị - Xã Hội</a></li>
+                    <!-- <li><a href="codes.html">Short Codes</a></li> -->
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid ">
+                <h3>Customer Services</h3>
+                <ul>>
+                    <li><a href="/Home/Contact">Contact</a></li>
+                    <li><a href="/Home/About">Giới Thiệu</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="footer-bottom">
+                <h2><a href="/Home/Index"><b>T<br>H<br>E</b>KT Computer Store<span>Best Place For Your Knowledge</span></a></h2>
+                <p class="fo-para">KT Computer Store - Best place for buying Computer Components and Gaming Gears with a really low price.</p>
+                <ul class="social-fo">
+                    <li><a href="#" class=" face"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class=" twi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class=" pin"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class=" dri"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class=" address">
+                    <div class="col-md-4 fo-grid1">
+                        <p><i class="fa fa-home" aria-hidden="true"></i>Hải Triều, Bến Nghé, Distrct 1, Hồ Chí Minh City.</p>
+                    </div>
+                    <div class="col-md-4 fo-grid1">
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>+1234 567 890 , +0919 113 114</p>
+                    </div>
+                    <div class="col-md-4 fo-grid1">
+                        <p><a href="mailto:info@example.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>KTBookStore@gmail.com</a></p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer-->
+    <!-- smooth scrolling -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+                };
+            */
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+    <a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!-- //smooth scrolling -->
+    <!-- for bootstrap working -->
+    <script src="js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+    @*<script type="text/javascript" src="js/jquery.mycart.js"></script>
+        <script type="text/javascript">
+            $(function () {
+
+                var goToCartIcon = function ($addTocartBtn) {
+                    var $cartIcon = $(".my-cart-icon");
+                    var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+                    $addTocartBtn.prepend($image);
+                    var position = $cartIcon.position();
+                    $image.animate({
+                        top: position.top,
+                        left: position.left
+                    }, 500, "linear", function () {
+                        $image.remove();
+                    });
+                }
+
+                $('.my-cart-btn').myCart({
+                    classCartIcon: 'my-cart-icon',
+                    classCartBadge: 'my-cart-badge',
+                    affixCartIcon: true,
+                    checkoutCart: function (products) {
+                        $.each(products, function () {
+                            console.log(this);
+                        });
+                    },
+                    clickOnAddToCart: function ($addTocart) {
+                        goToCartIcon($addTocart);
+                    },
+                    getDiscountPrice: function (products) {
+                        var total = 0;
+                        $.each(products, function () {
+                            total += this.quantity * this.price;
+                        });
+                        return total * 1;
+                    }
+                });
+
+            });
+        </script>*@
+
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script>
+        document.querySelectorAll('.my-cart-btn').forEach(function (button) {
+            button.addEventListener('click', function () {
+                // Hiển thị thông báo đẹp với SweetAlert
+                showSuccessAlert('Thêm thành công!');
+
+                // Các hành động khác có thể được thực hiện ở đây
+            });
+        });
+
+        // Hàm để hiển thị thông báo đẹp với SweetAlert
+        function showSuccessAlert(message) {
+            alert(message);
+        }
+    </script>
+
+    <script>
+
+        // Hàm chuyển hướng đến trang được chọn
+        function redirectToPage(page) {
+            if (page) {
+                window.location.href = page;
+            }
+        }
+
+        // Function to update the selected value
+
+    </script>
+
+
+
+
+    <script>
+        document.querySelectorAll('.my-cart-btn').forEach(function (button) {
+            button.addEventListener('click', function () {
+                // Hiển thị thông báo đẹp với SweetAlert
+                showSuccessAlert('Thêm thành công!');
+
+                // Các hành động khác có thể được thực hiện ở đây
+            });
+        });
+
+        // Hàm để hiển thị thông báo đẹp với SweetAlert
+        function showSuccessAlert(message) {
+            alert(message);
+        }
+    </script>
+
+    <script>
+        // Hàm chuyển hướng đến trang được chọn
+        function redirectToPage(page) {
+            if (page) {
+                window.location.href = page;
+            }
+        }        // Function to update the selected value
+    </script>
+
+
+    <script>
+        //About
+        //Sử lí sau khi nhấn vào button gửi
+        function submitForm() {
+            // Xử lý hiển thị thông báo thành công
+            document.getElementById("success-message").style.display = "block";
+
+            // Xóa nội dung biểu mẫu sau khi gửi (nếu cần)
+            var form = document.getElementById("myForm"); // Thay "myForm" bằng ID của biểu mẫu thực tế
+            if (form) {
+                form.reset();
+            }
+        }
+    </script>
+
+
+</body>
+</html>
